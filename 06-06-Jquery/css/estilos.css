@@ -1,0 +1,339 @@
+/*BODY CSS*/
+body{
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #FAFBED;
+}
+
+/*CONTENEDOR*/
+.contenedor{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/*HEADER*/
+header{
+  background-color: #022648;
+  color: #FFF;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #F5907C 4px solid;
+}
+
+header #logo{
+  float: left;
+}
+
+header #logo h1{
+  margin: 0;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+header ul{
+  margin: 0;
+  padding: 0;
+}
+
+header li{
+  float: left;
+  display: inline;
+  list-style: none;
+  padding: 0 20px 0 20px;
+}
+
+header a {
+  color:#FFF;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header a:hover{
+  color: #F2E5D2;
+  font-weight: bold;
+}
+
+header .resalta, header .actual a{
+  color: #F5907C;
+  font-weight: bold;
+}
+
+/*CONTENIDO*/
+#contenido{
+  min-height: 500px;
+  background: url('../img/gato.jpg');
+  color: #FFF;
+  text-align: center;
+}
+
+#contenido h1{
+  margin-top: 150px;
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+#contenido p{
+  font-size: 20px;
+}
+
+/*FORMULARIO*/
+#formulario{
+  padding: 15px;
+  color: #FFF;
+  background: #022648;
+}
+
+#formulario h1{
+  float: left;
+}
+
+#formulario form{
+  float: right;
+  margin-top: 15px;
+}
+
+/*BOTON DEL FORMULARIO*/
+.boton-1{
+  height:35px;
+  background-color: #F5907C;
+  color: #FFF;
+  border: 0;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/*COLUMNAS DE PASOS*/
+#pasos {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+#pasos .caja{
+  width: 80%;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+}
+
+#pasos .caja img{
+  width: 70%;
+  flex-direction: row;
+}
+
+.caja .txt{
+  justify-content: space-around;
+  align-items: flex-start;
+  vertical-align: top;
+  margin: 8px;
+}
+
+.txt{
+  justify-content: space-around;
+  text-align: left;
+  padding: 10px;
+  float: right;
+
+}
+
+
+/*FOOTER*/
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #FFF;
+  background-color: #F5907C;
+  text-align: center;
+}
+
+footer a{
+  text-decoration: none;
+  color: #F2E5D2;
+  font-weight: bold;
+}
+
+footer a:hover{
+  color: #022648;
+  font-weight: bold;
+}
+
+/*BOTON DEL FORMULARIO*/
+.contenedorFormulario{
+  background-color: #022648;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color:#FFF;
+  float: left;
+  margin: 10%;
+  width: 25%;
+  padding: 20px;
+  clear:both;
+}
+
+.contenedorFormulario .completar{
+  width: 25%;
+  border: 2px solid #dab3a7;
+  text-align: left;
+}
+
+.contenedorFormulario h2{
+  font-size: 18pt;
+}
+
+
+/*********************Media Queries**********************/
+
+/*para tablet portrait*/
+@media all and (min-width: 480px) and (max-width: 768px){
+
+  .contenedor{
+    width: 100%;
+  }
+
+  header{
+    border-bottom:  #022648 4px solid;
+  }
+
+  header #logo {
+    float:none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header .actual a{
+    color: #022648;
+    font-weight: bold;
+  }
+
+  header a:hover{
+    color: #F2E5D2;
+    font-weight: bold;
+  }
+
+  header nav{
+    float:none;
+    background-color: #F5907C;
+    text-align: center;
+    padding-top:15px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+
+  header li{
+    float:none;
+    text-align: center;
+    width: 100%;
+  }
+
+  #formulario{
+    padding-bottom: 40px;
+  }
+
+  #formulario h1{
+    float: none;
+    text-align: center;
+  }
+
+  #formulario form{
+    float: none;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  #pasos {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  #pasos .caja{
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #pasos .caja img{
+    width: 80%;
+  }
+
+}
+
+/*para celu portrait*/
+@media all and (max-width: 480px) {
+
+  .contenedor{
+    width: 100%;
+  }
+
+  header #logo {
+    float:none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header .actual a{
+    background: #F5907C;
+    color: #022648;
+    font-weight: bold;
+  }
+
+  header a:hover{
+    color: #F2E5D2;
+    font-weight: bold;
+  }
+
+/*NO PUEDO SOLUCIONARLOOO AIUDAA*/
+  header nav{
+    float:left;
+    display: block;
+    background-color: #F5907C;
+    text-align: center;
+    padding-top:15px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+
+  header li{
+    background: #022648;
+    float:left;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+/*HASTA ACA*/
+
+#formulario{
+  padding-bottom: 40px;
+}
+
+#formulario h1{
+  float: none;
+  text-align: center;
+}
+
+#formulario form{
+  float: none;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#pasos .caja{
+  margin: auto;
+  float: none;
+  width: 85%;
+  text-align: center;
+  padding: 20px;
+  background: #F2E5D2;
+}
+
+#pasos .caja img{
+  display: none;
+}
+
+}

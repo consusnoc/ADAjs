@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+</head>
+<body id="body_bg">
+	<div class="container">
+		<div class="form_top">
+			<h2>Formulario</h2>
+		</div>
+		<form action="" class="form_reg" id="datos_formulario">
+			<input type="text" id="nombre" class="input" placeholder="&#128105; Nombre" >
+			<input type="text" id="apellido" class="input" placeholder="&#128105; Apellido">
+			<input type="tel" id="telefono" class="input" placeholder="&#128222; Telefono">
+			<input type="email" id="email" class="input" placeholder="&#9993; E-mail">
+			<input type="number" id="edad" class="input" placeholder="&#128105; Edad">
+
+			<div class="btn_form">
+				<input type="submit" id="" class="btn_submit" onclick="validar(document.getElementById('nombre').value, document.getElementById('apellido').value, document.getElementById('telefono').value, document.getElementById('email').value, document.getElementById('edad').value)">
+				<input type="reset" id="" class="btn_reset" value="LIMPIAR">
+			</div>
+		</form>
+	</div>
+
+<script src="js/formulario.js"></script>
+</body>
+</html>

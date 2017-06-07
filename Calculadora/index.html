@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+	<script src="funciones.js"></script>
+</head>
+<body>
+	
+	<!--SUMA-->
+	<input type="number" id="numero1" name="num1" placeholder="1er numero">
+	<input type="number" id="numero2" name="num2" placeholder="2do numero">
+	<button id="suma" onclick="suma(document.getElementById('numero1').value, document.getElementById('numero2').value)">Sumar</button>
+
+	<br/>
+
+	<!--RESTA-->
+
+	<input type="number" id="numero3" name="num3" placeholder="1er numero">
+	<input type="number" id="numero4" name="num4" placeholder="2do numero">
+	<button id="resta" onclick="resta(document.getElementById('numero3').value, document.getElementById('numero4').value)">Restar</button>
+
+	<br/>
+
+	<!--MULTIPLICACION-->
+
+	<input type="number" id="numero5" name="num5" placeholder="1er numero">
+	<input type="number" id="numero6" name="num6" placeholder="2do numero">
+	<button id="multiplicacion" onclick="multiplicacion(document.getElementById('numero5').value, document.getElementById('numero6').value)">Multiplicar</button>
+
+	<br/>
+
+	<!--DIVISION-->
+
+	<input type="number" id="numero7" name="num7" placeholder="1er numero">
+	<input type="number" id="numero8" name="num8" placeholder="2do numero">
+	<button id="division" onclick="division(document.getElementById('numero7').value, document.getElementById('numero8').value)">Dividir</button>
+
+</body>
+</html>

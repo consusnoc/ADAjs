@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tarea Dias de la Semana</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var diasSemana = ["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"];
+    document.write(" Los dias de la semana son " + diasSemana.length + ": ");
+
+    for (i=0; i<diasSemana.length; i++){
+      if(i==(diasSemana.length-1)){
+        document.write (diasSemana[i] + ".");
+      } else{
+        document.write(diasSemana[i] + ", ");
+      }
+    }
+
+  document.write("<br>") //El <br> es el salto de linea que funciona en el navegador.
+  document.write("<br>")
+
+    /*dias habiles y fines de semana*/
+    for (i=0; i<diasSemana.length; i++){
+
+      if (i==(diasSemana.length-1) || i==(diasSemana.length-2)){
+        document.write(diasSemana[i] + " es fin de semana. " + "<br>");
+      } else{
+        document.write(diasSemana[i] + " es un dia habil. " + "<br>");
+      }
+    }
+
+
+  </script>
+
+
+</body>
+</html>

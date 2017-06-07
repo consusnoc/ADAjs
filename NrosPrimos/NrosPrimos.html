@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Numeros PRimos</title>
+</head>
+<body>
+  <script type="text/javascript">
+    cont = 0;
+    resto = 0;
+    //x = 314; //numero a evaluar
+    x = [10,13,5,80,313];
+
+    // for (var i = x; i >= 1; i-- ){
+    //   resto = x % i;
+    //   if(resto == 0){
+    //     cont++; // cont=cont+1
+    //   }
+    // }
+    // if(cont==2){
+    //   document.write("Es un numero primo.");
+    // } else {
+    //   document.write("No es un numero primo.");
+    // }
+
+    for ( var i = 0; i <=x.length - 1; i++){
+      for (var j = x[i]; j >= 1 ; j--) {
+        resto = x [i] % j;
+        if(resto == 0){
+          cont++;
+        }
+      }
+      if (cont == 2){
+        document.write("El numero " + x[i]+ " es primo <br/>");
+      } else {
+        document.write("El numero " +x[i]+ " no es primo <br/>")
+      }
+    cont = 0;
+    }
+
+
+
+  </script>
+</body>
+</html>
