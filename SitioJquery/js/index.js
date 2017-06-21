@@ -3,15 +3,15 @@
 	var imagenSlider= $('#imagenSlider');
 	var pos= $(imagenSlider).attr('data-pos');
 
-//variables del formulario 
 
+//variables del formulario 
 var formulario = document.getElementById('formulario');
 var nombre = formulario.nombre;
 var email = formulario.email;
 var error = document.getElementById('error');
 var errores = [];
 
-
+//INICIO DEL DOCUMENT READY 
 $(document).ready(function(){
 	//esto es para el modal
 	$('.img_peque').on('click', function(){ 
@@ -57,10 +57,10 @@ $(document).ready(function(){
 		validarFormulario();
 	});
 
-//	var datos = $('#contacto').serialize();
+}); 
+//fin document.ready
 
-}); //fin document.ready
-
+//FUNCION PARA EL SLIDE EN LA SECCION "SOBRE"
 function slider(){
 		$(imagenSlider).fadeOut('slow', function(){
 
@@ -85,9 +85,7 @@ function slider(){
 
 
 //VALIDAR EL FORMULARIO
-
-
-	function soloLetras(x) { //Valido apellido y nombre con expresion regular//
+	function soloLetras(x) { //Valido nombre con expresion regular//
 
 	expr = /^([a-zA-Z]{3,50})*$/ ; //expresion regular de intervalos de letras min 4 caracteres max 50//
 	if(expr.test(x)) {
@@ -97,7 +95,7 @@ function slider(){
 	} //Fin soloLetras //
 
 	function validarNombre(e){ //Funcion para validar el nombre//
-	 
+		
 		if(nombre.value == '' || nombre.value == null){
 			console.log('nombre vacio');
 			/*error.style.display = 'block';
@@ -113,7 +111,7 @@ function slider(){
 				errores.push('<li>Ingresá un nombre valido, por favor</li>');
 				//e.preventDefault();
 			} else {
-			return true;
+				return true;
 			}
 		}
 		return false;	
@@ -141,7 +139,7 @@ function slider(){
 		return false;
 	} //Fin validarEmail//
 
-function validarFormulario(e){
+	function validarFormulario(e){
 		error.innerHTML = '';
 		errores = [];
 
@@ -157,6 +155,5 @@ function validarFormulario(e){
 			for (i=0; i<errores.length; i++) {
 				error.innerHTML += errores[i];
 			}
-		}
-		
-} //Fin validar formulario//
+		}		
+	} //Fin validar formulario//
