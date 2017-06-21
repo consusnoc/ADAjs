@@ -36,7 +36,6 @@ else{
 
 
 function validar(nombre,apellido, telefono, edad, email){
-
 	var datos_formulario=[];
 
 	/*if ( validarTel(telefono) && validarEdad(edad) && validarMail(email) && validarLetras(apellido) && validarLetras(nombre) &&){
@@ -47,19 +46,19 @@ function validar(nombre,apellido, telefono, edad, email){
 	if (!campoRequerido(nombre) && !campoRequerido(apellido) && !campoRequerido(telefono) && !campoRequerido(email) && !campoRequerido(edad)){
 
 		if(!validarLetras(nombre)){
-			datos_formulario[0]= alert("El nombre solo puede tener letras");
+			datos_formulario[0]= "El nombre solo puede tener letras";
 		}
 		if(!validarLetras(apellido)){
-			datos_formulario[1]= alert("El apellido solo puede tener letras");
+			datos_formulario[1]= "El apellido solo puede tener letras";
 		}
 		if(!validarTel(telefono)){
-			datos_formulario[2]= alert("El telefono es invalido");
+			datos_formulario[2]="El telefono es invalido";		
 		}
 		if(!validarEdad(edad)){
-			datos_formulario[3]= alert("Tenes que ser mayor de 21");
+			datos_formulario[3]="Tenes que ser mayor de 21";	
 		}
 		if(!validarMail(email)){
-			datos_formulario[4]= alert("El email ingresado es invalido");
+			datos_formulario[4]="El email ingresado es invalido";
 		}
 	}//cierre if campo requerido
 }//cierre de la function validar
